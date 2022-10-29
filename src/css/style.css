@@ -1,0 +1,258 @@
+
+body {
+  font-family: 'TT Lakes';
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+.header {
+  display: flex;
+  align-content:center;
+  background-color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header-button{
+  cursor: pointer;
+  border-radius: 20px;  
+}
+
+.header-button:hover{
+  cursor: pointer;
+}
+
+.header-button:focus{
+  cursor: pointer;
+}
+
+.header-button:active{
+  cursor: pointer;
+}
+
+
+.menu{
+  display: flex;
+  align-content:center;
+}
+
+.menu__burger-logo-wrapper{
+  display: flex;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+
+.menu__burger{
+  margin-right: 16px;
+}
+
+.menu-logo-link{
+  display: block;
+}
+
+
+.menu__burger-logo-wrapper::after{
+  content: url(../assets/img/divider.svg);
+  display: flex;
+  height: 32px;
+  margin-left: 5%;
+  align-self: center;
+  margin-right: 5%;
+}
+
+.menu__contacts-wrapper{
+  display: flex;
+  align-items: center;
+  flex: 1 auto;
+}
+
+.contacts{
+  display: flex;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+
+.contacts__call{
+  display: none;
+}
+
+.contacts__chat{
+  display: none;
+}
+
+.contacts__profile{
+  display: none;
+}
+
+
+.main {
+  background-color: #f8f8f8;
+  padding-top: 24px;
+}
+
+.title-wrapper {
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.title-wrapper::before {
+  content: url(../assets/img/cian-highlight.svg);
+  margin-right: 12px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  font-weight: bold;
+  color: #1b1c21;
+}
+
+.title__button{
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title__button:hover{
+  cursor: pointer;
+}
+
+.title__button:focus{
+  cursor: pointer;
+}
+
+.title__button:active{
+  cursor: pointer;
+}
+
+
+.contacts__text{
+  margin-right: 8px;
+}
+
+
+.title__main{
+  max-height: 40px;
+}
+
+.title__contacts{
+  display: none;
+}
+
+.navigation{
+  display: flex;
+  list-style: none;
+  overflow-x: scroll;
+  margin-left: 16px;
+  margin-bottom: 24px;
+}
+
+.navigation__list{
+  display: flex;
+}
+
+.navigation__item{
+  margin-right: 16px;
+}
+
+.navigation__link{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #7e7e82;
+  padding: 8px 9.3px 8px 16.54px;
+  border: 2px solid rgba(0, 0, 0, 0); 
+  border-radius: 6px;
+}
+
+.navigation__link:hover{
+  cursor: pointer;
+}
+
+.navigation__link:focus{
+  cursor: pointer;
+}
+
+.navigation__link:active{
+  cursor: pointer;
+}
+
+.navigation__link:visited{
+  cursor: pointer;
+}
+
+
+.navigation__repairing-brands--selected{
+  border: 2px solid #B8FFEC; 
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.navigation__link{
+  display: block;
+  text-decoration: none;
+  color: #7E7E82;
+}
+
+
+.dell-info__text{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin-left: 15px;
+  margin-right: 16px;
+  color: #1B1C21;
+}
+
+.dell-info__paragraph{
+  margin-bottom: 16px;
+}
+
+.dell-info__paragraph-md{
+  display: none;
+}
+
+.dell-info__paragraph-xl{
+ display: none;;
+}
+
+.dell-info__button{
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.dell-info__button-image{
+  margin-right: 8px;
+}
+
+.dell-info__read-more{
+  display:flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap; 
+}
+
+/* картинку можно растянуть на весь блок
+  Но у неё такое вырвиглазное качество становится */
+
+.info-image{
+  width: 100%;
+  height: auto;
+}
