@@ -103,9 +103,11 @@
     display: none;
   }
   
-  .navigation{
-  overflow: hidden;
-  flex-wrap: wrap;
+  .navigation{   
+    overflow-x: hidden;   
+  }   
+  .navigation__list{
+    flex-wrap: wrap;
   }
   .main {
     padding-top: 40px;
