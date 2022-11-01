@@ -102,6 +102,11 @@
   .container .header {
     display: none;
   }
+  
+  .navigation{
+  overflow: hidden;
+  flex-wrap: wrap;
+  }
   .main {
     padding-top: 40px;
   }
