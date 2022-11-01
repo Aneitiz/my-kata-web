@@ -3,7 +3,7 @@
   .header {
     padding: 18px 24px;
   }
-  .menu__burger-logo-wrapper {
+  .header__burger-logo-wrapper {
     align-items: center;
     justify-content: start;
   }
