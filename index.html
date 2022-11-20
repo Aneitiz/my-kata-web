@@ -1,40 +1,341 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/adaptive.css" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-    <title>slider</title>
-</head>
-<body>
-    <div class="slider-wrapper">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    11111111
-                </div>
-                <div class="swiper-slide">
-                    22222222222
-                </div>
-                <div class="swiper-slide">
-                    3333333333333
-                </div>
-                <div class="swiper-slide">
-                    
-                </div>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Swiper</title>
+  </head>
+  <body>
+    <!-- У SVG-шки samsung вроде как есть какой то баг с полосой 
+    поэтому пришлось экспортировать png, там появляется прямоугольная полоса
+  по ширине и высоте SVG картинки -->
+    <div class="slider card-wrapper">
+      <div class="slider__title">Ремонт техники различных брендов</div>
+      <div class="swiper" data-mobile="false">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/lenovo-logo.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>    
-            
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/apple-logo.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="#" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image swiper__lenovo-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/bosh-logo.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/hp-logo.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/acer-logo.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__slide-m slider__slide-m--hidden slider__slide-l--visible">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide-m slider__slide-m--hidden slider__slide-l--visible">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide-m slider__slide-m--hidden">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide-m slider__slide-m--hidden">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide-m slider__slide-m--hidden">
+            <div class="swiper__slide-inner">
+              <a href="" class="swiper__link">
+                <img
+                  src="src/assets/img/samsung-logo.png"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+              <a href="" class="swiper__link-dropdown">
+                <img
+                  src="src/assets/img/dropdown.svg"
+                  alt=""
+                  class="swiper__image"
+                />
+              </a>
+            </div>
+          </div>
         </div>
+        </div>
+        <div class="card--hidden">
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+          <div class="swiper__slide-inner">
+            <a href="" class="swiper__link">
+              <img
+                src="src/assets/img/samsung-logo.png"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+            <a href="" class="swiper__link-dropdown">
+              <img
+                src="src/assets/img/dropdown.svg"
+                alt=""
+                class="swiper__image"
+              />
+            </a>
+          </div>
+        </div>  
+        <button type="button" class="card__show-more">
+          <img
+            src="src/assets/img/arrows-dawn.svg"
+            alt=""
+            class="slider__show-image"
+          />
+          <span class="card__show-more-text">показать всё</span> 
+        </button>
+        <div class="swiper-pagination"></div>
+      </div>
+      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
-</body>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/showMore.js"></script>
+  </body>
 </html>
