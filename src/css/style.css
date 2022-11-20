@@ -1,4 +1,168 @@
-.swiper {
-  width: 600px;
-  height: 300px;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "TT Lakes";
 }
+
+.slider {
+  width: 100%;
+  background-color: #f2f2f2;
+  min-height: 232px;
+  position: relative;
+}
+.card {
+  display: none;
+}
+.card--hidden {
+  display: none;
+}
+
+.slider__title {
+  padding: 16px;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  font-weight: 400;
+  color: #7e7e82;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  margin-bottom: 16px;
+}
+.swiper {
+  width: 100%;
+  position: relative;
+}
+.slider-wrapper {
+  min-height: 400px;
+  position: relative;
+}
+.swiper__wrapper-m {
+  display: none;
+}
+.swiper-slider {
+  width: auto;
+}
+.swiper-slider-l {
+  display: none;
+}
+
+.swiper__slide-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 76px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 16px;
+  width: 90%;
+  margin-left: 16px;
+}
+
+.swiper__image {
+  display: block;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #b5b6bc;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  color: #b5b6bc;
+}
+
+.swiper__link {
+  display: flex;
+}
+.card__item-l {
+  display: none;
+}
+.swiper__link-dropdown {
+  display: flex;
+  border: 2px solid #ff3e79;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.card__show-more {
+  display: none;
+}
+/* может опять жуткий затуп, но я так и не понял как перебивать 
+авто стили свайпера, если можешь подскажи где прочитать, просто он даже
+костыльный !important перебивает */
+@media (min-width: 768px) {
+  .slider .slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-row-gap: 16px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .slider__slide-m--hidden {
+    display: none;
+  }
+  .card-wrapper {
+    height: 100%;
+  }
+  /* Также я так и не понял как сделать плавное выдвижение блоков,
+ при display: grid и visibility: hidden; в сетке остается место под эти блоки,
+ а display none не получается анимировать, решил создать новую псевдосетку и
+ стилизовать уже её */
+
+  .card-wrapper .card {
+    max-height: 168px;
+    transition: max-height 0.6s ease-out;
+  }
+  .card--hidden {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 3fr);
+    grid-row-gap: 16px;
+    margin-top: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+  }
+  .card__show-more {
+    display: flex;
+    min-width: 24px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    align-items: center;
+    margin-left: 16px;
+
+  }
+  .slider__show-image{
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .slider .slider__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-row-gap: 16px;
+  }
+  .card--hidden {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    width: 100%;
+  }
+  .card-wrapper .card {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-row-gap: 24px;
+  }
+  .slider__slide-l--visible {
+    display: block;
+  }
+}
+
