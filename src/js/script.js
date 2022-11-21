@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       mySwiper.update();
     }
     if (mediaQuery.matches) {
-      slider.dataset.mobile = "false";
       if (slider.classList.contains("swiper-initialized")) {
         mySwiper.update();
         mySwiper.destroy();
