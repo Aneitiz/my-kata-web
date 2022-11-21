@@ -58,6 +58,23 @@ body {
   width: 90%;
   margin-left: 16px;
 }
+.swiper__slide-inner:hover{
+  cursor: pointer;
+  box-shadow:0px 0px 3px 2px #FF3E79 inset;
+  transition: box-shadow 0.2s; 
+}
+ 
+.swiper__slide-inner:focus{
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 2px #FF3E79 inset;
+  transition: box-shadow 0.2s; 
+}
+
+.swiper__slide-inner:active{
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 2px #FF3E79 inset;
+  transition: box-shadow 0.2s; 
+}
 
 .swiper__image {
   display: block;
@@ -90,9 +107,7 @@ body {
 .card__show-more {
   display: none;
 }
-/* может опять жуткий затуп, но я так и не понял как перебивать 
-авто стили свайпера, если можешь подскажи где прочитать, просто он даже
-костыльный !important перебивает */
+
 @media (min-width: 768px) {
   .slider .slider__wrapper {
     display: grid;
@@ -109,10 +124,6 @@ body {
   .card-wrapper {
     height: 100%;
   }
-  /* Также я так и не понял как сделать плавное выдвижение блоков,
- при display: grid и visibility: hidden; в сетке остается место под эти блоки,
- а display none не получается анимировать, решил создать новую псевдосетку и
- стилизовать уже её */
 
   .card-wrapper .card {
     max-height: 168px;
@@ -143,6 +154,15 @@ body {
   .slider__show-image{
     margin-right: 16px;
   }
+  .card__show-more:focus{
+    cursor: pointer;
+  }
+  .card__show-more:hover{
+    cursor: pointer; 
+  }
+  .card__show-more:hover{
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1120px) {
@@ -160,9 +180,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     grid-row-gap: 24px;
+    max-height: 180px
   }
   .slider__slide-l--visible {
     display: block;
   }
 }
-
