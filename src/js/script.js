@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   mobileSlider();
-
+ 
   sliderToggler(cardHiddenItem);
 });
