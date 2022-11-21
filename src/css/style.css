@@ -45,6 +45,10 @@ body {
 .swiper-slider-l {
   display: none;
 }
+.swiper__dropdown{
+  width: 40px;
+  height: 40px;
+}
 
 .swiper__slide-inner {
   display: flex;
