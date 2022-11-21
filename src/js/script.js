@@ -35,13 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
           clickable: true,
         },
       });
-      slider.dataset.mobile = true;
       mySwiper.update();
     }
     if (mediaQuery.matches) {
       slider.dataset.mobile = "false";
       if (slider.classList.contains("swiper-initialized")) {
-        slider.dataset.mobile = false;
         mySwiper.update();
         mySwiper.destroy();
       }
